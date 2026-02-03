@@ -10,8 +10,8 @@
 
 ## 安装
 
-1. 本目录即为 Alfred workflow 包 **GCL-Generate-Number.alfredworkflow**，可直接双击导入，或在 Alfred 中：**Workflows** → **+** → **Import**，选择本目录。
-2. 确保目录内有 `info.plist` 和 `generate_number.py`（默认已配置）。
+1. **双击**本目录内的 **GCL-Generate-Number.alfredworkflow** 文件（Alfred 可识别的安装包），按提示导入；或在 Alfred 中：**Workflows** → **+** → **Import**，选择该 `.alfredworkflow` 文件。
+2. 从 GitHub 下载时，可直接下载 [GCL-Generate-Number.alfredworkflow](https://github.com/naodeng/alfred-gcl-workflow/raw/main/GCL-Generate-Number.alfredworkflow) 后双击安装。
 
 ## 使用
 
@@ -29,6 +29,7 @@
 
 | 文件 | 说明 |
 |------|------|
+| `GCL-Generate-Number.alfredworkflow` | 安装包（zip），双击即可导入 Alfred |
 | `generate_number.py` | Script Filter 脚本：解析长度、生成随机数、输出 JSON |
 | `info.plist` | Workflow 配置：关键字 gcl、Script Filter、复制到剪贴板 |
 
