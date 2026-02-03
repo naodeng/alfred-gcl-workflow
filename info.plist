@@ -25,7 +25,8 @@
 	<key>createdby</key>
 	<string>inaodeng</string>
 	<key>description</key>
-	<string>Generation for different character lengths. 输入 gcl 10 生成 10 位数字。</string>
+	<string>EN: Generate a random number by digit length (keyword: gcl). E.g. gcl 10 → 10-digit number. Length 1–20000.
+中文：按指定位数生成随机数字（关键字 gcl）。如 gcl 10 生成 10 位数字，长度 1–20000 位可调。</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -62,7 +63,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>generate_number.py</string>
+				<string>run.sh</string>
 				<key>subtext</key>
 				<string>输入数字长度，如 10</string>
 				<key>title</key>
@@ -100,7 +101,13 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>## GCL - Generate Number by Length
+
+**English**
+Generate a random number with a specified number of digits. Keyword: `gcl`. Type `gcl 10` to get a 10-digit number; the length (1–20000) is up to you. Result can be copied (↵) or shown in Large Type (⌘L).
+
+**中文**
+按指定位数生成随机数字。关键字：`gcl`。输入 `gcl 10` 即生成 10 位数字，位数 1–20000 可任意指定。回车复制到剪贴板，⌘L 大号显示。</string>
 	<key>uidata</key>
 	<dict>
 		<key>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</key>
@@ -117,7 +124,7 @@
 			<key>ypos</key>
 			<integer>100</integer>
 		</dict>
-	</uidata>
+	</dict>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
