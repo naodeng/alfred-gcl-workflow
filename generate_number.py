@@ -4,7 +4,6 @@ Alfred Script Filter: Generation for different character lengths (gcl).
 Usage: gcl <length> → generates a random number with the specified digit length.
 """
 import json
-import random
 import sys
 
 
@@ -51,10 +50,9 @@ def main():
         }, ensure_ascii=False))
         return
 
-    min_val = 10 ** (length - 1)
-    max_val = (10 ** length) - 1
-    num = random.randint(min_val, max_val)
-    result = str(num)
+    base = "1234567890"
+    repeat, remainder = divmod(length, len(base))
+    result = (base * repeat) + base[:remainder]
 
     print(json.dumps({
         "items": [{
