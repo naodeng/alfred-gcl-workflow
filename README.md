@@ -1,12 +1,15 @@
 # GCL - Alfred Workflow
 
-**Generation for different character lengths**：按指定位数生成随机数字。
+**Generation for different character lengths**：支持循环数字输出和 3 种随机输出模式。
 
 ## 功能
 
 - 关键字：`gcl`（可带空格后跟数字）
-- 输入 `gcl 10` → 生成一个 10 位数字（如 `3847291056`）
-- 长度 1–20000 位可调，数字为变量，可随意输入不同长度
+- 输入 `gcl 10` → 循环输出 `1234567890`（按长度截取）
+- 输入 `gcl a 10` → 随机字母（大小写）
+- 输入 `gcl an 10` → 随机数字 + 大小写字母
+- 输入 `gcl ans 10` → 随机数字 + 大小写字母 + 符号
+- 长度支持 1–20000，超过会提示上限
 
 ## 安装
 
@@ -16,8 +19,12 @@
 ## 使用
 
 1. 打开 Alfred（⌘ + Space 或你设置的快捷键）；
-2. 输入 `gcl 10`（10 可改为任意 1–20000 的整数）；
-3. 会显示生成的指定位数字，回车可复制到剪贴板；⌘L 可大号显示。
+2. 选择模式并输入长度（长度范围 1–20000）：
+   - `gcl 10`
+   - `gcl a 10`
+   - `gcl an 10`
+   - `gcl ans 10`
+3. 会显示对应结果，回车可复制到剪贴板；⌘L 可大号显示。
 
 ## 依赖
 
@@ -30,7 +37,7 @@
 | 文件 | 说明 |
 |------|------|
 | `GCL-Generate-Number.alfredworkflow` | 安装包（zip），双击即可导入 Alfred |
-| `generate_number.py` | Script Filter 脚本：解析长度、生成随机数、输出 JSON |
+| `generate_number.py` | Script Filter 脚本：解析模式和长度，生成循环或随机结果，输出 JSON |
 | `info.plist` | Workflow 配置：关键字 gcl、Script Filter、复制到剪贴板 |
 
 ## 说明

@@ -25,8 +25,8 @@
 	<key>createdby</key>
 	<string>inaodeng</string>
 	<key>description</key>
-	<string>EN: Generate a random number by digit length (keyword: gcl). E.g. gcl 10 → 10-digit number. Length 1–20000.
-中文：按指定位数生成随机数字（关键字 gcl）。如 gcl 10 生成 10 位数字，长度 1–20000 位可调。</string>
+	<string>EN: Generate by mode and length (keyword: gcl): gcl 10 / gcl a 10 / gcl an 10 / gcl ans 10. Length 1–20000.
+中文：按模式和长度生成内容（关键字 gcl）：gcl 10 / gcl a 10 / gcl an 10 / gcl ans 10。长度 1–20000。</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -65,9 +65,9 @@
 				<key>scriptfile</key>
 				<string>run.sh</string>
 				<key>subtext</key>
-				<string>输入数字长度，如 10</string>
+				<string>输入: 10 / a 10 / an 10 / ans 10</string>
 				<key>title</key>
-				<string>GCL - 按长度生成数字</string>
+				<string>GCL - 按模式和长度生成</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -101,13 +101,23 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## GCL - Generate Number by Length
+	<string>## GCL - Generate by Mode and Length
 
 **English**
-Generate a random number with a specified number of digits. Keyword: `gcl`. Type `gcl 10` to get a 10-digit number; the length (1–20000) is up to you. Result can be copied (↵) or shown in Large Type (⌘L).
+Keyword: `gcl`. Supported inputs:
+- `gcl 10` (loop number 1234567890)
+- `gcl a 10` (random letters)
+- `gcl an 10` (random digits + letters)
+- `gcl ans 10` (random digits + letters + symbols)
+Length supports 1–20000. Result can be copied (↵) or shown in Large Type (⌘L).
 
 **中文**
-按指定位数生成随机数字。关键字：`gcl`。输入 `gcl 10` 即生成 10 位数字，位数 1–20000 可任意指定。回车复制到剪贴板，⌘L 大号显示。</string>
+关键字：`gcl`。支持输入：
+- `gcl 10`（循环数字 1234567890）
+- `gcl a 10`（随机字母）
+- `gcl an 10`（随机数字 + 字母）
+- `gcl ans 10`（随机数字 + 字母 + 符号）
+长度支持 1–20000。回车复制到剪贴板，⌘L 大号显示。</string>
 	<key>uidata</key>
 	<dict>
 		<key>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</key>
@@ -126,7 +136,7 @@ Generate a random number with a specified number of digits. Keyword: `gcl`. Type
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://inaodeng.com</string>
 </dict>
