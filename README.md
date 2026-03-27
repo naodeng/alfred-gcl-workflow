@@ -37,7 +37,7 @@
 | 文件 | 说明 |
 |------|------|
 | `GCL-Generate-Number.alfredworkflow` | 安装包（zip），双击即可导入 Alfred |
-| `generate_number.py` | Script Filter 脚本：解析模式和长度，生成循环或随机结果，输出 JSON |
+| `generate_content.py` | Script Filter 脚本：解析模式和长度，生成循环或随机结果，输出 JSON |
 | `info.plist` | Workflow 配置：关键字 gcl、Script Filter、复制到剪贴板 |
 
 ## 说明
